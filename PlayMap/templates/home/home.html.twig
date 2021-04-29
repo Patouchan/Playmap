@@ -1,0 +1,258 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+	{{ parent() }}- Home
+{% endblock %}
+
+{% block content %}
+
+	<main>
+
+		<!-- MODALE UTILISATEUR -->
+		<div id="user-acc" class="d-none" style="opacity: 0;">
+
+			<section class="user-avatar text-center">
+				<img class="w-25" src="{{ asset('images/old-man.png') }}" alt="">
+			</section>
+
+			<section class="user-pseudo my-2">
+				<div>
+					{% if app.user %}
+						<p>{{ app.user.pseudo }}</p>
+					{% endif %}
+				</div>
+			</section>
+
+			<section class="user-grade my-3">
+				<p>
+          {% if app.user %}
+						— {{ app.user.gradeLabel }} —
+					{% endif %}
+        </p>
+			</section>
+
+			<!-- A*A -- PROGRESSION -->
+			<section class="user-level d-flex justify-content-center align-items-center my-3">
+
+				<div class="user-level-logo">
+					<img src="images/BadgeOr.png" alt="">
+				</div>
+
+				<div class="user-level-prog">
+          <div></div>
+          <div class="user-level-prog-int bg-warning"></div>
+        </div>
+
+				<div class="user-level-logo">
+					<img src="images/Médaille.png" alt="">
+				</div>
+
+			</section>
+
+			<!-- A*A -- STATS -->
+			<section class="user-stats d-flex justify-content-between">
+
+				<div class="user-stats-icon">
+					<p>85<br>km</p>
+				</div>
+				<div class="user-stats-icon">
+					<p>2000<br>calories</p>
+				</div>
+				<div class="user-stats-icon">
+					<p>250 g<br>Co2/km</p>
+				</div>
+
+			</section>
+
+			<section class="user-account my-3 text-center">
+				{% if app.user %}
+					<a class="btn btn-account" href="{{ path('account', {('id'): app.user.id}) }}">Voir profil</a>
+				{% endif %}
+			</section>
+
+
+		</div>
+		<!-- FIN DU MODALE UTILISATEUR -->
+
+
+		<!--MAIN-->
+
+		<div class="container">
+
+			<div
+				class="row">
+
+				<!-- RPR -- BLOC DE GAUCHE ****************************************************** -->
+				<div class="col-4 text-center justify-content-center">
+					<div class="cadreChallenge ">
+						<h3>Mes Challenges</h3>
+						<div class="cadreChallenge2">
+							<p>Pas de Challenge en cours...</p><br>
+							<a href="" class="">Inscrivez-vous pour participer aux challenges !</a>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- RPR -- BLOC DU CENTRE ****************************************************** -->
+				<div class="col-4">
+
+					<div class="row justify-content-center ombreTransport">
+						<img class="ombreVelo" src="{{ asset('images/Ombre+Vélo.png') }}">
+						<img class="ombretrottinette d-none" src="{{ asset('images/ombretrottinette.png') }}">
+						<img class="ombrePied d-none" src="{{ asset('images/Icon_Apied.png') }}">
+						<p class="selection med-txt">Sélectionnez votre moyen de transport :</p>
+					</div>
+
+					<div class="row justify-content-center">
+
+						<div class="btnTransport">
+							<button type="button" id="btnVelo" class="btn text-light med-txt">Vélo</button>
+						</div>
+						<div class="btnTransport">
+							<button type="button" id="btnTrottinette" class="btn text-light med-txt">Trottinette</button>
+						</div>
+						<div class="btnTransport">
+							<button type="button" id="btnPied" class="btn text-light med-txt">A Pieds</button>
+						</div>
+
+						<!-- FIN MOYEN DE TRANSPORTS-->
+
+					</div>
+
+
+					<!--A*A-- FORMULAIRE ITINERAIRE -->
+					<form>
+						<div class="form-group" style="">
+							<label for="start">Départ</label>
+							<input type="text" class="form-control" id="start" placeholder="Adresse de départ" name="start">
+						</div>
+
+						<div class="Vector">
+							<img class="float-right" src="{{ asset('images/vector.png') }}" alt="VECTOR">
+						</div>
+
+						<div class="form-group">
+							<label for="stop">Arrivée</label>
+							<input type="text" class="form-control" id="stop" placeholder="Adresse d'arrivée" name="stop">
+						</div>
+
+						<div class="row justify-content-around">
+							<button type="button" id="search" class="btn btn-warning text-light mb-4" name="search">Allons-y !</button>
+							<button type="button" id="btnGo" class="btn btn-danger text-light mb-4">Valider mon Trajet !</button>
+						</div>
+
+
+					</form>
+					<!--FIN INPUT DEPART ARRIVEE-->
+
+				</div>
+
+				<!-- RPR -- BLOC DE DROITE ****************************************************** -->
+				<div
+					class="col-4">
+					<!--METEO ****************************************************** -->
+
+					<div class="meteo">
+						<div
+							class="row">
+							<!-- row météo -->
+
+							<div class="col-6 p-3 mb-2 text-white">
+								<p id="cityTemp" class="font-weight-bold"></p>
+							</div>
+
+							<div class="col-6">
+								<div>
+									<img id="temp" src="" alt="">
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div
+						class="row">
+						<!-- row trajet -->
+
+						<div class="col p-3 mt-5 mb-3 statsTrajet">
+
+							<div class="statsTrajetHaut">
+								<p>12 km</p>
+								<p>25 min</p>
+							</div>
+							<div class="statsTrajetBas d-flex justify-content-between">
+								<article>
+									<p>2000
+										<br>calories</p>
+								</article>
+								<article>
+									<p>1056
+										<br>co2</p>
+								</article>
+								<article>
+									<img id="transport" src="{{ asset('images/Vélo.png') }}" alt="transport mobilité">
+								</article>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div
+						class="row">
+						<!-- row favoris -->
+						<button class="btn btn-warning text-light mx-auto">Enregistrer dans les favoris</button>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!-- fin du container -->
+
+
+		<!--MAP-->
+		<div class="container-fluid">
+			<div id="carte" class="map"></div>
+		</div>
+		<!-- FIN MAP-->
+
+
+		<!-- MODALE CHALLENGER -->
+
+		<div id="user-chal" class="d-none p-4 ">
+			<section class="border-chal text-center py-3">
+
+				<section class="badge">
+					<img src="{{ asset('images/badge.png') }}" alt="BADGE">
+					<h4 class="font-weight-bold">Bien Joué !
+						<br>
+						Vous êtes arrivé !</h4>
+				</section>
+
+				<section class="cumuler font-weight-bold">
+					<p class="text-light">
+						Vous Avez Cumulé :
+					</p>
+					<p class="text-warning">
+						+ 3 Km
+					</p>
+					<p class="text-danger">
+						- 200 Calories
+					</p>
+					<p class="text-info">
+						- 20g co2/km
+					</p>
+				</section>
+			</section>
+
+		</div>
+
+		<!-- FIN DU MODALE CHALLENGER -->
+
+	</main>
+
+
+{% endblock %}

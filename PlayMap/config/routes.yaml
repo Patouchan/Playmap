@@ -1,0 +1,40 @@
+home:
+   path: /
+   controller: App\Controller\HomeController::index
+
+# page de test
+beta:
+   path: /beta
+   controller: App\Controller\HomeController::beta
+
+get_database:
+    path: /database
+    controller: App\Controller\HomeController::getDatabase
+
+security_registration:
+    path: /registration
+    controller: App\Controller\SecurityController::registration
+
+security_login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
+security_logout:
+    path: /logout
+    controller: App\Controller\SecurityController::logout
+
+account:
+    path: /account/{id}
+    controller: App\Controller\AccountController::account
+    requirements:
+        id: \d+
+
+# backoffice
+backoffice:
+    path: /admin/back
+    controller: App\Controller\BackController::back
+
+# inscription
+inscription:
+    path: /inscription
+    controller: App\Controller\SecurityController::inscription

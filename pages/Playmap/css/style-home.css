@@ -1,0 +1,158 @@
+
+/*---BODY---*/
+
+
+body{
+    background-image: url(../image/fond_num_4_1-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+/*---BODY---*/
+
+/*---HEADER---*/
+
+header, main{
+    justify-content: space-between;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/* Matteo ------------------------------------------------- */
+header {
+  background-color: rgba(0, 255, 255, 0.5);
+  border: 1px solid green;
+}
+
+main {
+  background-color: rgba(255, 220, 0, 0.5);
+  border: 1px solid blue;
+}
+
+/* Matteo ------------------------------------------------- */
+
+
+
+
+.coupechallenges{
+    z-index: 1;
+    position: relative;
+    margin-top: 5px;
+}
+
+.btnChallenge{
+    /* z-index: auto; */
+    display: inline;
+    margin-top: 17px;
+    margin-left: -20px;
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25); */
+}
+
+.btnChallenge a{
+    border-radius: 50px;
+    padding: 10px 25px 10px 35px;
+    margin: -20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.50);
+}
+
+.logoplaymap{
+    height: 100px;
+    width: 150px;
+}
+
+.btn-nav{
+    margin: 10px;
+    padding: 5px 20px  !important;
+    border: white 1px solid;
+    border-radius: 10px;
+}
+
+/*---HEADER---*/
+
+/*---MAIN---*/
+
+.cadreChallenge{
+    border: 1px solid white;
+    padding: 20px 0px 30px 0px;
+    border-radius: 40px;
+    background-color: #0006;
+    width: 60%;
+    height: 375px;
+    margin: auto;
+}
+
+.cadreChallenge2{
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 30px 7% 30px 7% ;
+    padding: 15% 5%;
+    height: 200px;
+}
+
+a{
+    color: #ffbf00 !important;
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+.selection{
+    font-size: larger;
+    text-align: center;
+}
+
+.btnTransport button{
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.50);
+    margin: 10px;
+    padding: 5px 30px;
+    background-color: #F44293;
+}
+
+/*---meteo a voir---*/
+.meteo{
+    height: 110px;
+    border-radius: 70px;
+    background-color: #0067A0;
+}
+
+.meteo p{
+    width: 100px;
+    padding-left: 30px;
+}
+
+.meteo img{
+    margin-left: 90px;
+}
+/*---meteo a voir---*/
+
+.map{
+    height: 800px;
+    width: 100%;
+    border: 2px solid red;
+}
+
+/*---MAIN---*/
+
+/*---FOOTER---*/
+
+footer{ 
+    background-color: #004B76;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.Fcontact p{
+    margin: 0px;
+}
+
+.imgR img{
+    padding: 10px 10px;
+}
+
+/*---FOOTER---*/

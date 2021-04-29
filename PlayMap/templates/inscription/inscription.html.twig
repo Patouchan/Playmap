@@ -1,0 +1,259 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+	{{ parent() }}- Inscription
+{% endblock %}
+
+{% block content %}
+
+	<main id="main" class="mx-auto">
+
+    <div id="fondCouleur"></div>
+
+		<div class="container">
+
+			<div class="row mb-5 d-flex justify-content-center" id="borderPage">
+
+				<div class="col p-3">
+
+					<h3 class="my-2 text-center">Créez votre compte en quelques étapes</h3>
+					<div id="barreJaune" class="progress mb-5">
+						<div id="statue" class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+
+
+					{{ form_start(form) }}
+
+
+					<!--###############SECTION1########################-->
+
+					<section id="sectRegister1">
+						{{ form_row(form.pseudo, {'label' : 'Votre Pseudo'}) }}
+						{{ form_row(form.email, {'label' : 'Email'}) }}
+						{{ form_row(form.password, {'label' : 'Mot de passe'}) }}
+						{{ form_row(form.confirm_password, {'label' : 'Confirmez votre mot de passe'}) }}
+						{{ form_row(form.newsletter, {'label' : 'S\'abonner à la newsletter'}) }}
+                <div class="text-right">
+                  <div id="btn1" class="btn btn-alert">Continuer</div>
+                </div>
+              </section>
+
+              <section id="sectRegister2" class="d-none">
+                {{ form_row(form.birthday, {'label' : 'Anniversaire'}) }}
+                {{ form_row(form.address, {'label' : 'Adresse'}) }}
+                {{ form_row(form.postalCode, {'label' : 'Code Postal'}) }}
+                {{ form_row(form.city, {'label' : 'Ville'}) }}
+
+                <div class="text-right">
+                  <div id="btn2" class="btn btn-alert">Continuer</div>
+                </div>
+              </section>
+
+              <section id="sectRegister3" class="d-none">
+                <h3 class="pb-3 text-center">Par quel moyen vous déplacez-vous ?</h3>
+
+                <div class="row mb-5">
+
+                  <div class="col-4">
+                    <div id="cardTransport" class="card border border-3 m-auto px-3 bg-alert">
+                      <img src="{{ asset('images/Ombre+Vélo.png') }}" class="mx-auto d-block" alt="...">
+                      <div class="card-body">
+                        <p class="card-text" style="font-weight: 700;">Le Vélo
+                          <br>
+                          ( L'Intemporel )</p>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="col-4">
+                  <div id="cardTransport2" class="card border border-3 m-auto px-3">
+                    <img src="{{ asset('images/Icon_Apied.png') }}" class="mx-auto d-block" alt="...">
+                    <div class="card-body">
+                      <p class="card-text" style="font-weight: 700;">
+                        A Pied
+                        <br>
+                        ( Fidèle au poste )</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div id="cardTransport3" class="card border border-3 m-auto px-3">
+                    <img src="{{ asset('images/ombretrottinette.png') }}" class="mx-auto d-block" alt="...">
+                    <div class="card-body">
+                      <p class="card-text" style="font-weight: 700;">La Trottinette
+                        <br>
+                        ( So Cool )</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="my-3 form-check">
+                <input type="checkbox" class="form-check-input " id="exampleCheck1" required>
+                <label class="form-check-label text-warning" for="exampleCheck1">J’accepte en créant un compte, les Conditions générales de PlayMap.
+                </label>
+              </div>
+
+              <div class="d-flex justify-content-end mt-4">
+								<input type="submit" class="btn btn-warning text-light mb-4 px-3" value="Créer votre compte">
+							</div>
+
+              </section>
+
+
+
+              
+
+          
+          
+          {{ form_end(form) }}
+
+
+					</div>
+
+
+					<!--###############SECTION1########################-->
+
+					<!--
+					
+									<section id="sectRegister1" class="row">
+										<div class="col-12">
+											<div class="mb-5 ">
+					              <label for="exampleInputEmail1" class="form-label">Votre Pseudo</label>
+												<input type="email" class="form-control" id="exampleInputEmail1">
+					            </div>
+					
+											<div class="mb-5">
+					
+												<label for="exampleInputEmail1" class="form-label">Email</label>
+												<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					            </div>
+					
+											<div class="mb-5">
+												<label for="exampleInputEmail1" class="form-label">Mot de Passe</label>
+												<input type="email" placeholder="Au moins 6 caractères" class="form-control" id="mdp">
+											</div>
+					
+											<div class="mb-5">
+												<label for="exampleInputPassword1" class="form-label">Entrez le mot de passe à nouveau</label>
+												<input type="password" class="form-control" id="">
+											</div>
+					
+					
+											<div class="mb-3 form-check">
+												<input type="checkbox" class="form-check-input " id="Newsletter">
+												<label class="form-check-label " for="Newsletter">S'abonner à la Newsletter
+												</label>
+											</div>
+					
+											<div class="btnContinuer">
+												<div type="submit" id="btn1" class="btn btn-warning text-light mb-5 px-3">Continuer
+													<img src="{{ asset('images/Polygon_1.png') }}" class="img-fluid" alt=""></div>
+											</div>
+										</div>
+					
+									</section>
+					
+					
+									<!--###############SECTION2########################-->
+
+					<!--
+					
+									<section id="sectRegister2" class="col-8 d-none">
+										<div class="mb-5 ">
+											<label for="Anniversaire" class="form-label">Anniversaire</label>
+											<input type="text" class="form-control" id="Anniversaire">
+										</div>
+					
+										<div class="mb-5">
+											<label for="exampleInputEmail1" class="form-label">Adresse</label>
+											<input type="text" class="form-control" id="Adresse" aria-describedby="emailHelp">
+										</div>
+					
+										<div class="mb-5">
+											<label for="Ville" class="form-label">Ville</label>
+											<input type="text" class="form-control" id="ville">
+										</div>
+					
+										<div class="mb-5">
+											<label for="CodePostale" class="form-label">Code Postal</label>
+											<input type="text" class="form-control" id="CodePostale">
+										</div>
+					
+										<div class="btnContinuer">
+											<div type="submit" id="btn2" class="btn btn-warning text-light mb-5 px-3">Terminer
+												<img src="{{ asset('images/Polygon_1.png') }}" class="img-fluid" alt=""></div>
+										</div>
+					
+									</section>
+					
+					        -->
+
+				<!--###############SECTION3########################-->
+
+					<!--
+					
+									<section id="sectRegister3" class="d-none">
+					
+										<h3 class="pb-5 text-center">
+											Par quel moyen vous déplacez-vous ?</h3>
+					
+										<div class="row mb-5">
+											<div class="col-4">
+												<div id="cardTransport" class="card border border-3 m-auto px-3 ">
+													<img src="{{ asset('images/Ombre+Vélo.png') }}" class="mx-auto d-block" alt="...">
+													<div class="card-body">
+														<p class="card-text">Le Vélo
+															<br>
+															( L'Intemporel )</p>
+													</div>
+												</div>
+											</div>
+					
+											<div class="col-4">
+												<div id="cardTransport2" class="card border border-3 m-auto px-3">
+													<img src="{{ asset('images/Icon_Apied.png') }}" class="mx-auto d-block" alt="...">
+													<div class="card-body">
+														<p class="card-text">
+															A Pied
+															<br>
+															( Fidèle au poste )</p>
+													</div>
+												</div>
+											</div>
+					
+											<div class="col-4">
+												<div id="cardTransport3" class="card border border-3 m-auto px-3">
+													<img src="{{ asset('images/ombretrottinette.png') }}" class="mx-auto d-block" alt="...">
+													<div class="card-body">
+														<p class="card-text">La Trottinette
+															<br>
+															( So Cool )</p>
+													</div>
+												</div>
+											</div>
+										</div>
+					
+					
+										<div class="mb-3 form-check">
+											<input type="checkbox" class="form-check-input " id="exampleCheck1" required>
+											<label class="form-check-label text-warning" for="exampleCheck1">J’accepte en créant un compte, les Conditions générales de PlayMap.
+											</label>
+										</div>
+					
+										<div class="d-flex justify-content-end mt-4">
+											<button type="submit"  class="btn btn-warning text-light mb-4 px-3">Créer votre compte</button>
+										</div>
+					
+									</section>
+					
+					        -->
+
+				</div>
+
+			</div>
+			<!-- end of container -->
+		</main>
+	{% endblock %}

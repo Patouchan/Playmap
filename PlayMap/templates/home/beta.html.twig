@@ -1,0 +1,55 @@
+{% extends 'layout.html.twig' %}
+
+
+{% block title %}
+	{{ parent() }}
+	- beta
+{% endblock %}
+
+
+{% block content %}
+	{{ parent() }}
+
+	<div class="container">
+		<div class="row my-5">
+			<div class="col">
+
+        {% if app.user %}
+          <p class="text-danger">Ce message apparaît si un utilisateur est connecté : user = {{ app.user.pseudo }}</p>
+        {% endif %}
+
+				<h2>Page de test</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos magni praesentium nam voluptatem corrupti natus. Maxime debitis quo, quidem, voluptates molestias asperiores et vero delectus dolor distinctio, corporis voluptatem aut.</p>
+			</h2>
+      <div id="react-root" class="my-3"></div>
+
+
+			<table class="table">
+				<thead class="thead-dark">
+					<tr>
+						<th>id</th>
+						<th>name</th>
+						<th>age</th>
+					</tr>
+
+				</thead>
+				<tbody>
+					{% for beta in betas %}
+						<tr>
+							<td>{{beta.id}}</td>
+							<td>{{beta.name}}</td>
+							<td>{{beta.age}}</td>
+						</tr>
+					{% endfor %}
+
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+  <div class="row">
+    <div class="col">
+      <div id="react-root"></div>
+    </div>
+  </div>
+</div>{% endblock %}

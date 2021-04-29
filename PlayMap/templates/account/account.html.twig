@@ -1,0 +1,37 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+  {{ parent() }} - Page Profil
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col my-5">
+        <h2>Page Profil</h2>
+
+        <p>ID : {{ user.id }}</p>
+        <p>Nom de famille : {{ user.lastname }}</p>
+        <p>Prénom : {{ user.firstname }}</p>
+        <p>Pseudo : {{ user.pseudo }}</p>
+        <p>Mail : {{ user.email }}</p>
+        <p>Statut : {{ grade }}</p>
+
+        <p>Distance Totale : {{ user.stat.totalDistance }} km</p>
+        <p>Distance Mensuelle : {{ user.stat.monthlyDistance }} km</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam totam saepe velit neque dolore incidunt, quidem maiores, tempora, corporis officiis dignissimos magnam quae nisi! Quia odio expedita consectetur quibusdam?</p>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

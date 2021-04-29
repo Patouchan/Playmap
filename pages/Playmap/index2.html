@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style-home.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700;900&display=swap');
+    </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+
+    <!---BARRE DE NAV-->
+
+
+    <div class="container-fluid" style="border: 1px solid red;">
+
+      <!--COUPE + BTN CHALLENGE-->
+
+      <div class="row p-3 pb-5 justify-content-center text-center">
+
+        <div class="col-4 align-self-center bg-primary">
+          <a href="#">
+            <img class="coupechallenges" src="image/iconcoupechallenge.png"></img>
+          </a>
+          <div class="btnChallenge">
+            <a class="btn btn-warning text-light d-sm-none d-lg-inline" href="#">Challenges</a>
+          </div>
+        </div>
+
+        <!--COUPE + BTN CHALLENGE-->
+
+        <!--LOGO PLAYMAP-->
+
+        <div class="col-4 bg-secondary">
+          <a href="#"><img class="logoplaymap" src="image/logoplaymap2.png" alt="logoPlayMap"></a>
+        </div>
+
+        <!--LOGO PLAYMAP-->
+
+        <!--NAV BURGER INSCRIPTION CONNEXION-->
+
+        <div class="col-4 bg-warning">
+          <nav class="navbar navbar-expand-lg navbar-dark ">
+            <button class="navbar-toggler border-light" type="button" data-toggle="collapse"
+              data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active text-light btn-nav" href="#">Inscription</a>
+                <a class="nav-link active text-light btn-nav" href="#">Connexion</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+
+    <!--NAV BURGER INSCRIPTION CONNEXION-->
+
+    <!--BARRE DE NAV-->
+
+  </header>
+
+  <main>
+
+    <!--MAIN-->
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <!--CADRE MES CHALLENGES-->
+
+        <div class="col-4 text-center justify-content-center">
+          <div class="cadreChallenge ">
+            <h2>Mes Challenges</h2>
+            <div class="cadreChallenge2">
+              <p>Pas de Challenge en cours... </p><br>
+              <a href="" class=""> Inscrivez-vous pour participer aux challenges ! </a>
+            </div>
+          </div>
+        </div>
+
+        <!--CADRE MES CHALLENGES-->
+
+        <!--MOYEN DE TRANSPORTS-->
+
+        <div class="col-4">
+          <div class="row justify-content-center">
+            <img class="ombretrottinette" src="image/ombretrottinette.png"> </img>
+            <p class="selection">Sélectionnez votre moyen de transport :</p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="btnTransport">
+              <button type="button" class="btn text-light">Vélo</button>
+            </div>
+            <div class="btnTransport">
+              <button type="button" class="btn text-light">Trottinette</button>
+            </div>
+            <div class="btnTransport">
+              <button type="button" class="btn text-light">A Pieds</button>
+            </div>
+          </div>
+
+          <!--MOYEN DE TRANSPORTS-->
+
+          <!--INPUT DEPART ARRIVEE-->
+
+          <div class="row justify-content-center">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Départ</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Adresse de départ">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Arrivée</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Adresse d'arrivée">
+              </div>
+            </form>
+          </div>
+          <div class="row justify-content-center">
+            <button type="button" class="btn btn-warning text-light mb-4">Allons-y !</button>
+          </div>
+        </div>
+
+        <!--INPUT DEPART ARRIVEE-->
+
+        <!--METEO-->
+        <div class="meteo">
+          <div class="col-4">
+            <div class="row">
+
+              <div class="col-6 p-3 mb-2 text-white">
+                <p>Paris 10°<br>Aujourd'hui 10°/8°</p>
+              </div>
+
+              <div class="col-6">
+                <div><img src="image/MétéoVent.png" alt=""></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!--METEO-->
+
+        <!--MAP-->
+
+        <div class="map"></div>
+
+        <!--MAP-->
+
+        <!--MAIN-->
+
+  </main>
+
+  <footer>
+
+    <!--FOOTER-->
+
+    <div class="container-fluid">
+
+      <div class="row p-3">
+
+        <div class="col-3 ">
+          <div class="Fcontact">
+            <p>Contact Siège</p>
+            <p>6 Rue Chaudron</p><br>
+            <p>75010 PARIS</p><br>
+            <p>xxx.gmail.com</p>
+            <p>Tel : 0123456789</p>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="row justify-content-center mb-5 mt-3">
+            <div class="imgR">
+              <img src="image/InstagramIcon.png" alt="">
+              <img src="image/FacebookIcon.png" alt="">
+              <img src="image/TwitterIcon.png" alt="">
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-4 text-center mt-4">
+              <p>Mentions légales</p>
+            </div>
+
+            <div class="col-4 text-center mt-4">
+              <p>Cookies</p>
+            </div>
+
+            <div class="col-4 text-center mt-4">
+              <p>Contactez-nous</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-3 align-self-center">
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Suivez notre actualité</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Adresse mail">
+          </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--FOOTER-->
+
+  </footer>
+
+
+
+</body>
+
+</html>

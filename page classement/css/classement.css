@@ -1,0 +1,224 @@
+
+/*---BODY---*/
+
+
+body{
+    background-image: url(../image/fond_num_4_1-1.png);
+    background-color:  #002b43;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+/*---BODY---*/
+
+/*---HEADER---*/
+
+header, main{
+    justify-content: space-between;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/* Matteo ------------------------------------------------- */
+/* header {
+  background-color: rgba(0, 255, 255, 0.5);
+  border: 1px solid green;
+}
+
+main {
+  background-color: rgba(255, 220, 0, 0.5);
+  border: 1px solid blue;
+} */
+
+/* Matteo ------------------------------------------------- */
+
+
+
+
+.coupechallenges{
+    z-index: 1;
+    position: relative;
+    margin-top: 5px;
+}
+
+.btnChallenge{
+    /* z-index: auto; */
+    display: inline;
+    margin-top: 17px;
+    margin-left: -20px;
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25); */
+}
+
+.btnChallenge a{
+    border-radius: 50px;
+    padding: 10px 25px 10px 35px;
+    margin: -20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.50);
+}
+
+.logoplaymap{
+    height: 100px;
+    width: 150px;
+}
+
+.btn-nav{
+    margin: 10px;
+    padding: 5px 20px  !important;
+    border: white 1px solid;
+    border-radius: 10px;
+}
+
+/*---HEADER---*/
+
+.challengeCom p {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+
+header {
+    border: 4px solid red;
+}
+
+.container {
+    border: 4px solid green;
+    display: flex;
+    margin: auto;
+}
+
+.logoplaymap{
+    height: 100px;
+    width: 150px;
+}
+
+.recherche{
+    width: 50%;
+    height: 50%;
+}
+
+#classement {
+    margin-top: 2rem;
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 60%;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    
+}
+
+#classement h3{
+    text-align: center;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.50);
+}
+
+li{
+    border-radius: 15px;
+}
+
+
+#classementlist .list-group-item {
+    margin-bottom: 1rem;
+    background: rgb(46,206,227);
+    background: linear-gradient(337deg, rgba(46,206,227,1) 50%, rgba(190,237,241,1) 50%);
+    border-radius: 30px;
+}
+
+#classementlist .list-group-item:first-child{
+    margin-top: 1rem;
+    background: rgb(231,220,138);
+    background: linear-gradient(337deg, rgba(231,220,138,1) 50%, rgba(255,194,0,1) 50%);
+}
+#classementlist .list-group-item:nth-child(2){
+    background: rgb(203,208,208);
+    background: linear-gradient(337deg, rgba(203,208,208,1) 50%, rgba(234,241,244,1) 50%);
+}
+#classementlist .list-group-item:nth-child(3){
+    background: rgb(227,153,46);
+    background: linear-gradient(337deg, rgba(227,153,46,1) 50%, rgba(236,200,140,1) 50%);
+}
+
+#classementlist .list-group-item img {
+    height: 40px;
+}
+
+#classementlist .list-group-item .rank {
+    color: #333;
+}
+
+#classementlist .list-group-item:first-child .rank {
+    color: orange;
+}
+
+.challengeCom {
+    border: 1px solid #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #0006;
+    width: 350px;
+    height: 375px;
+    margin-top: 2rem
+    /* margin: auto; */
+}
+
+.challengeCom h4{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    padding: 1rem;
+}
+
+#progressBarre {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 4px solid blue;
+}
+
+
+.bluebox{
+    width: 200px;
+    height: 4vh;
+    background-color: #004B76;
+    border-radius: 30px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.progress-bar{
+    background-color: #00F0FF;
+    border-radius: 30px;
+}
+.textfin{
+    color: #FFEA9F !important;
+}
+.btnparticiper{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.chalClassique{
+    border: solid red 2px;
+}
+
+
+/*FOOTER*/
+footer{ 
+    background-color: #004B76;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.Fcontact p{
+    margin: 0px;
+}
+
+.imgR img{
+    padding: 10px 10px;
+}

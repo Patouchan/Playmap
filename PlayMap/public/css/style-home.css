@@ -1,0 +1,245 @@
+
+/* ---MATTEO--- */
+
+.med-txt {
+  font-size: .9rem;
+}
+
+
+/*---BODY---*/
+
+
+body{
+    background-image: url(../images/fond_num_5.jpg);
+    /* background-size: 2880px 2889px; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* height: 600px; */
+    font-family: 'Rubik', sans-serif !important;
+}
+
+/*---BODY---*/
+
+/*---HEADER---*/
+
+header {
+    justify-content: space-between;
+    color: white;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+}
+
+main {
+  color: white;
+}
+
+
+.container-fluid {
+  padding: 0;
+}
+
+
+
+.coupechallenges{
+    z-index: 1;
+    position: relative;
+    margin-top: 5px;
+}
+
+.btnChallenge{
+    /* z-index: auto; */
+    display: inline;
+    margin-top: 17px;
+    margin-left: -20px;
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25); */
+}
+
+.btnChallenge a{
+    border-radius: 50px;
+    padding: 10px 25px 10px 35px;
+    margin: -20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.50);
+}
+
+.logoplaymap{
+    height: 100px;
+    width: 150px;
+}
+
+.btn-nav{
+    margin: 10px;
+    padding: 5px 20px  !important;
+    border: white 1px solid;
+    border-radius: 10px;
+}
+
+/*---HEADER---*/
+
+/*---MAIN---*/
+
+.cadreChallenge{
+    border: 1px solid white;
+    padding: 20px 0px 30px 0px;
+    border-radius: 40px;
+    background-color: #0006;
+    width: 75%;
+    /* height: 375px; */
+    margin: auto;
+}
+
+.cadreChallenge2{
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 30px 7% 30px 7% ;
+    padding: 15% 5%;
+    /* height: 200px; */
+}
+
+a{
+    color: #ffbf00 !important;
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+.selection{
+    /* font-size: larger; */
+    text-align: center;
+}
+
+.btnTransport button{
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.50);
+    margin: 1rem;
+    padding: 5px 20px;
+    background-color: #F44293;
+}
+
+.ombreTransport img{
+  width: 200px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+/*---meteo a voir---*/
+.meteo{
+    height: 110px;
+    border-radius: 15px;
+    background-color: #0067A0;
+}
+
+.meteo p{
+    width: 170px;
+    padding-left: 30px;
+}
+
+#temp{
+  width: 115px;
+}
+
+/*---meteo a voir---*/
+
+.map{
+    height: 800px;
+    /* border: 1px solid red; */
+    /* background: lightgrey; */
+  }
+
+
+.leaflet-routing-container.leaflet-bar.leaflet-control {
+  display: none;
+}
+
+
+
+.statsTrajet {
+  border: 2px solid white;
+  margin: 0 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background: #9300DB;
+}
+
+.statsTrajetHaut {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statsTrajetHaut p {
+  padding: .5rem 1rem;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.statsTrajetHaut p:nth-child(2) {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.statsTrajetBas article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90px;
+  min-height: 90px;
+  font-size: .7rem;
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* border: 1px solid red; */
+}
+
+.statsTrajetBas article p {
+  text-align: center;
+  padding: 0;
+  /* border: 1px solid #000; */
+}
+
+.statsTrajetBas article:nth-child(1) {
+  background-image: url(../images/Stat_calories.png);
+}
+
+.statsTrajetBas article:nth-child(2) {
+  background-image: url(../images/Stat_co2.png);
+}
+
+.statsTrajetBas article:nth-child(3) img {
+  width: 65%;
+}
+
+#transport{
+  width: 70px;
+}
+
+
+/*---MAIN---*/
+
+/*---FOOTER---*/
+
+footer{ 
+    background-color: #004B76;
+    color: white;
+
+    /* position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0; */
+    
+}
+
+
+
+.Fcontact p{
+    margin: 0px;
+}
+
+.imgR img{
+    padding: 10px 10px;
+}
+
+/*---FOOTER---*/

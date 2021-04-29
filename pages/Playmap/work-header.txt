@@ -1,0 +1,23 @@
+<header>
+		<nav>
+			<h1 class="d-inline-block mx-3">
+				<a href="{{ path('home') }}">PlayMap</a>
+			</h1>
+
+			{# {% if is_granted('ROLE_USER') %} #}
+			{% if app.user %}
+
+				<span class="mx-3">Bonjour
+					{{ app.user.pseudo }}</span>
+				<a href="{{ path('security_logout') }}">Se déconnecter</a>
+
+			{% else %}
+
+				<span class="mx-3">Bonjour Inconnu</span>
+				<a class="mx-3" href="{{ path('security_login') }}">Se connecter</a>
+				<a class="mx-3" href="{{ path('security_registration') }}">S'inscrire</a>
+
+			{% endif %}
+
+		</nav>
+	</header>

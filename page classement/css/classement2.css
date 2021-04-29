@@ -1,0 +1,321 @@
+/*---BODY---*/
+
+body{
+    background-image: url(../image/fond_num_4_1-1.png);
+    background-color:  #002b43 !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+/*---BODY---*/
+
+/*---HEADER---*/
+
+header, main{
+    justify-content: space-between;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.coupechallenges{
+    z-index: 1;
+    position: relative;
+    margin-top: 5px;
+}
+
+.btnChallenge{
+    display: inline;
+    margin-top: 17px;
+    margin-left: -20px;
+}
+
+.btnChallenge a{
+    border-radius: 50px;
+    padding: 10px 25px 10px 35px;
+    margin: -20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.50);
+}
+
+.logoplaymap{
+    height: 100px;
+    width: 150px;
+}
+
+.btn-nav{
+    margin: 10px;
+    padding: 5px 20px  !important;
+    border: white 1px solid;
+    border-radius: 10px;
+}
+
+/*---FIN HEADER---*/
+
+
+
+
+
+
+
+
+/*---MAIN---*/
+
+/* main{
+    background-color: rgba(255, 220, 0, 0.5);
+    border: 2px solid blue;
+} */
+
+#classementChall{
+    justify-content: space-between;
+}
+
+#classementGeneral{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    height: 375px;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 60%;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+}
+
+/* LIST CLASSEMENT */
+
+#classement h3{
+    text-align: center;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.50);
+}
+
+li{
+    border-radius: 15px;
+}
+
+.left{
+    align-self: center;
+}
+
+#classementlist{
+    text-shadow: 1px 1px 1px black;
+}
+
+#classementlist .list-group-item {
+    padding: 0.1rem 1rem;
+    margin-bottom: 1rem;
+    background: rgb(73,225,232);
+    background: linear-gradient(337deg, rgba(73,225,232,1) 50%, rgba(20,196,237,1) 50%);
+    border-radius: 10px;
+}
+
+#classementlist .list-group-item:first-child{
+    margin-top: 1rem;
+    background: rgb(255,225,81);
+    background: linear-gradient(337deg, rgba(255,225,81,1) 50%, rgba(255,199,0,1) 50%);
+}
+#classementlist .list-group-item:nth-child(2){
+    background: rgb(214,214,214);
+    background: linear-gradient(337deg, rgba(214,214,214,1) 50%, rgba(172,172,172,1) 50%);  
+}
+#classementlist .list-group-item:nth-child(3){
+    background: rgb(255,158,47);
+    background: linear-gradient(337deg, rgba(255,158,47,1) 50%, rgba(255,122,0,1) 50%);
+}
+
+#classementlist .list-group-item img {
+    height: 40px;
+}
+
+#classementlist .list-group-item .rank {
+    color: #333;
+    text-shadow: 0px 0px 0px black;
+    box-shadow: inset 0px 4px 5px #00000054;
+    background-color: white;
+    padding: 5px 11px;
+    border-radius: 8px;
+}
+
+.kilometers{
+    color: #333;
+    text-shadow: 0px 0px 0px black;
+    box-shadow: inset 0px 5px 5px #00000054;
+    background-color: white;
+    padding: 5px 11px;
+    border-radius: 8px;
+    margin-left: 0.5rem;
+}
+
+#classementlist .list-group-item:first-child .rank {
+    color: orange;
+}
+
+/* FIN LIST CLASSEMENT */
+
+
+/* CHALLENGE COMMUN */
+.challengeCom {
+    border: 1px solid #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #0006;
+    /* width: 350px; */
+    height: 375px;
+    margin-top: 2rem
+    /* margin: auto; */
+}
+
+.challengeCom h4{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    padding: 1rem;
+    font-size: larger;
+    margin-bottom: 5%;
+}
+
+#favoris{
+    margin-bottom: 5%;
+}
+
+#progressBarre {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 30px !important;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .75rem;
+    background-color:#004B76 !important;
+    border-radius: 35px !important;
+    border-radius: .25rem;
+}
+
+.progress-bar{
+    background-color: #00F0FF !important;
+    border-radius: 35px !important;
+}
+
+/* FIN CHALLENGE COMMUN */
+
+
+
+
+/* CHALLENGE CLASSIQUE SOLO */
+
+#challSolo{
+    background: linear-gradient(180deg, #BD00FF 0%, rgba(189, 0, 255, 0.43) 100%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 195px;
+}
+
+#challSoloP{
+    position: absolute;
+    left: 3%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #14C4ED;
+    border-radius: 0px 15px 15px 0px;
+    align-items: center;
+    padding: inherit;
+    height: 80%;
+}
+
+/* FIN CHALLENGE CLASSIQUE SOLO */
+
+/* #challenge3{
+    justify-content: space-between;
+} */
+
+#challSolo2{
+    background: linear-gradient(180deg, #CC3BAC 0%, #DA0063 100%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    height: 195px;
+}
+
+.imgChamp{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnCommencer{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+#challEnCours{
+    background-color: #14C4ED;
+}
+
+.challengeCom2 {
+    border: 1px solid #ffffff;
+    background-color: #14C4ED;
+    padding: 20px;
+    border-radius: 15px;
+    /* width: 350px; */
+    height: 375px;
+    margin-top: 2rem
+    /* margin: auto; */
+}
+
+.challengeCom2 h4{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    padding: 1rem;
+    font-size: larger;
+    margin-bottom: 5%;
+}
+
+#favoris2{
+    margin-bottom: 5%;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+/* #favoris2 p{
+
+} */
+
+
+/*---FIN MAIN---*/
+
+
+
+
+
+
+
+
+/*---FOOTER---*/
+
+footer{ 
+    background-color: #004B76;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.Fcontact p{
+    margin: 0px;
+}
+
+.imgR img{
+    padding: 10px 10px;
+}
+
+/*---FIN FOOTER---*/
